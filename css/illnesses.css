@@ -1,0 +1,138 @@
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.content {
+    width: 50%;
+}
+
+.lg p {
+    max-width: 95%;
+    font-size: 2em;
+}
+
+.lg .card__container {
+    border-bottom: 2px dashed black;
+    padding-top: 1em;
+    width: 80%;
+}
+
+/****************************************/
+
+.container {
+    width: 100%;
+    margin: auto;
+
+    place-items: center;
+    padding-block: 5rem;
+}
+
+.card__container {
+    display: grid;
+    row-gap: 3.5rem;
+}
+.card__article {
+    width: 500px;
+    position: relative;
+}
+.card__data {
+    font-size: 0.8em;
+    width: 96%;
+    height: 190px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px #696969;
+    border-radius: 1em;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 0.5s;
+}
+.card__article:hover .card__data {
+    background-color: white;
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity 0.35s;
+}
+.card__article:not(:hover) .card__data {
+    background-color: white;
+    animation: remove-data 1s forwards;
+}
+@keyframes show-data {
+    0% {
+        transform: translate(0.5em);
+    }
+
+    100% {
+        transform: translate(0rem);
+    }
+}
+@keyframes remove-data {
+    0% {
+        transform: translate(0rem);
+    }
+
+    100% {
+        transform: translate(0.1rem);
+    }
+}
+
+
+.solution {
+    border-radius: 2em;
+    background-color: #ACC572;
+}
+
+.solution h2 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    margin: 0;
+}
+
+.solution p {
+    text-align: center;
+    padding: 1em 0.5em;
+    margin-top: 0.5em;
+}
+
+.solution i {
+    color: black;
+    text-align: center;
+}
+
+.solution {
+    text-align: center;
+
+}
+
+span {
+    color: rgb(238, 26, 26);
+    font-weight: 700;
+}
+
+/***************************************/
+.sm .content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sm .card__article {
+    margin: 0 auto;
+}
+
+.sm p {
+    font-size: 2em;
+}

@@ -1,0 +1,141 @@
+body {
+    background-color: #ffffff;
+}
+.left {
+    
+    background-color: #ACC572;
+    width: 80%;
+    height: 90vh;
+    text-align: center;
+}
+
+img {
+    width: 25em;
+}
+
+.menu {
+    margin: 2em 10em;
+}
+
+.left h3 {
+    font-size: 3em;
+    margin: 0.5em;
+}
+
+.menu h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: white;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+
+.menu h2:hover {
+    background-color: #c5c5c5;
+}
+
+.button {
+    margin: 0 auto;
+    width: 20%;
+    font-size: 2.5em;
+    border-radius: 1em;
+    background-color: #A76545;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+header{
+    margin-bottom: 0;
+}
+.button a {
+    color: #ffffff;
+    padding: 1em;
+}
+
+.button:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    transition: 0.1s;
+    background-color: #92593d;
+}
+
+.info {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.info h3 {
+    width: 98%;
+    padding-left: 1em;
+     font-size: clamp(1.8rem, 2vw, 3.5rem);
+    background-color: #dbdbdb;
+    border-radius: 0.1em;
+}
+
+.info i {
+      font-size: clamp(1.8rem, 1.5vw, 3.5rem);
+    color: black;
+}
+
+.info i:hover {
+    transform: scale(1.1);
+}
+
+span {
+    font-weight: 100;
+}
+
+.accordion {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.faq {
+    font-size: clamp(1.8rem, 1.5vw, 3.5rem);
+    margin-bottom: 3rem;
+    margin-top: 1em;
+}
+
+.accordion-button {
+    font-size: clamp(1.5rem, 1.3vw, 3rem);
+    background-color: #acc572;
+    padding: 15px;
+}
+
+.accordion-body {
+    font-size: clamp(1.2rem, 1vw, 3rem);
+}
+.accordion-button:not(.collapsed) {
+  background-color: #7b944f;
+  color: #fff;
+} 
+
+
+/*-------------------------*/
+.sm .container-fluid{
+    padding: 0;
+}
+.profile {
+    height: 45vh;
+    background-color: #ACC572;
+}
+.sm img {
+    width: 20%;
+}
+.sm .button{
+    margin-bottom: 1em;
+}
+.sm .button a{
+    font-size: 0.5em;
+}
+.sm .info {
+    margin-top: 2em;
+}
+.sm .info h3 {
+   font-size: clamp(1.2rem, 3vw, 3rem);
+}

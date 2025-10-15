@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    >
+    <link rel="stylesheet" href="./../../vendor/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./../../css/general.css" >
+    <link rel="stylesheet" href="./../../css/product-detail.css" >
+    <title>Product detail</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar d-block">
+        <div class="d-flex justify-content-center align-items-center logo-pic">
+          <a href="#" class="navbar-brand"
+            ><img
+              src="./../../img/header-logo-name.png"
+              alt="logo-doggo-name"
+              class="logo navbar-brand"
+          ></a>
+
+          <div class="d-flex justify-content-end profile-zone">
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="./../shopping-cart.html">
+                <i class="bi bi-cart-dash d-none d-md-block"></i
+              ></a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="./../notification.html">
+                <i class="bi bi-bell d-none d-md-block"></i
+              ></a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#">
+                <i class="bi bi-search magnifie d-none d-md-block"></i
+              ></a>
+            </div>
+
+            <a href="./../profile.html"
+              ><img
+                src="./../../img/profile-pic-11.jpg"
+                alt="picture profile user"
+                class="profile-pic-user"
+            ></a>
+          </div>
+        </div>
+        <div class="navbar-expand-sm d-flex justify-content-end">
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="./../shopping-cart.html">
+              <i class="bi bi-cart-dash mb-bell d-md-none"></i
+            ></a>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="./../notification.html">
+              <i class="bi bi-bell mb-bell d-md-none"></i
+            ></a>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="#">
+              <i class="bi bi-search magnifie mb-bell d-md-none"></i
+            ></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg">
+        <div
+          class="collapse navbar-collapse justify-content-center align-items-center"
+          id="navbarToggleExternalContent"
+        >
+          <div
+            class="navbar navbar-expand-lg"
+            id="navbarToggleExternalContent-2"
+          >
+            <ul class="navbar-nav gap-5">
+              <li class="nav-item"><a href="./../home.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-target="dropdown"
+                  >About dog</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-item dropdown-toggle"
+                      >Dog info</a
+                    >
+                    <ul class="dropdown-menu dropdown-2">
+                      <li>
+                        <a href="./../breeds-md.html" class="dropdown-item"
+                          >Breeds</a
+                        >
+                      </li>
+                     
+                      <li>
+                        <a href="./../insurance.html" class="dropdown-item"
+                          >Pet insurance</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./../illnesses.html" class="dropdown-item"
+                          >Common disease</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./../poison-food.html" class="dropdown-item"
+                          >Poison</a
+                        >
+                      </li>
+                      <li><a href="./../nutrian.html" class="dropdown-item">Nutritions</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-item dropdown-toggle"
+                      >Dog social</a
+                    >
+                    <ul class="dropdown-menu dropdown-2">
+                      <li>
+                        <a href="./../dog-community.html" class="dropdown-item"
+                          >Dog community forum</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./../dog-gallery.html" class="dropdown-item"
+                          >Dog gallery</a
+                        >
+                      </li>
+                      <li><a href="./../healthcare.html" class="dropdown-item">Healthcare</a></li>
+                       <li>
+                        <a href="./../news.html" class="dropdown-item"
+                          >Dog news</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a href="./../adoption.html">Adoption</a></li>
+
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Shop</a
+                >
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="./../home-shop.html" class="dropdown-item"
+                      >Shopping</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./../shopping-cart.html" class="dropdown-item"
+                      >Cart</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./../notification.html" class="dropdown-item"
+                      >Notification</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Expert</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="./../advice.html" class="dropdown-item">Advice</a>
+                  </li>
+                  <li>
+                    <a href="./../training-basic.html" class="dropdown-item"
+                      >Training</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >About us</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="./../feedback.html" class="dropdown-item"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./../team.html" class="dropdown-item">Team</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="margin-bottom-4">
+      <h1 class="product-name">
+        ZippyPaws Dog Toy, Happy Hour Crusher, Champagne Bottle Design
+      </h1>
+      <div
+        class="row justify-content-center align-items-center contain-product"
+      >
+        <div class="col-md-6 row justify-content-center item-all-pic">
+          <div class="col-8">
+            <img
+              src="./../../img/flash-sale-3.webp"
+              alt="picture of champagne pushies"
+              class="product-pic"
+            >
+          </div>
+          <div class="row col-4 item-detail align-items-center">
+            <div class="col-12">
+              <img
+                src="./../../img/champange-1.png"
+                alt="picture of champagne pushies"
+                class="small-product-pic"
+              >
+            </div>
+            <div class="col-12">
+              <img
+                src="./../../img/champange-2.png"
+                alt="picture of champagne"
+                class="small-product-pic"
+              >
+            </div>
+            <div class="col-12">
+              <img
+                src="./../../img/champange-3.png"
+                alt="picture of champagne pushies"
+                class="small-product-pic"
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 descrip-item">
+          <div class="d-flex descrip-item-inside align-item-center">
+            <p class="price">$10</p>
+            <p class="ori-price">$13</p>
+            <p class="save-price">SAVE 23%</p>
+          </div>
+          <div class="d-flex align-items-center review">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i
+            ><span class="num-reviews">(12)</span>
+          </div>
+          <p class="paragraph-item">
+            Get the playtime party started with the satisfying crunch and squeak
+            of a Happy Hour Crusherz toy from ZippyPaws! Simply replace the
+            bottle and reuse the squeaky cap to keep your dog playing for hours!
+          </p>
+          <div class="d-flex group-btn">
+            <a
+              href="#"
+              class="btn buy-btn d-flex justify-content-center align-items-center"
+              >Buy</a
+            >
+            <a
+              href="./../shopping-cart.html"
+              class="btn cart-btn d-flex justify-content-center align-items-center"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="margin-bottom-4">
+      <div class="row review-shipping">
+        <div class="col-md-6 reviews">
+          <h4>Reviews</h4>
+          <ul>
+            <li>
+              <div class="d-flex comment-review">
+                <img
+                  src="./../../img/profile-pic-7.jpg"
+                  alt="profile user review"
+                  class="profile-review"
+                >
+                <div class="d-flex flex-column justify-content-start">
+                  <p class="name">ด้อกเต้อพิไพพร</p>
+                  <div>
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="comments">
+                คุณภาพ : ดี <br >
+                ลักษณะ : อ้วน
+              </p>
+              <hr >
+            </li>
+            
+            <li>
+              <div class="d-flex comment-review">
+                <img
+                  src="./../../img/profile-pic-8.jpg"
+                  alt="profile user review"
+                  class="profile-review"
+                >
+                <div class="d-flex flex-column justify-content-start">
+                  <p class="name">หมาเก่าๆมอมๆ</p>
+                  <div>
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="comments">
+                ของมีคุณภาพ สมราคา นุ่มมาก เยี่ยม ดีเลิศ ยอดเยี่ยม เยี่ยมยอด
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 shipping">
+          <h4>About shipping</h4>
+          <ul>
+            <li>
+              You will receive the product between September 18 - September 20,
+              with free shipping ($0).
+            </li>
+            <li>Delivered by Seller</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contain-more">
+      <h4 class="text-center more">More like this</h4>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <img
+                    src="./../../img/dog-product-1.webp"
+                    class="card-img-top"
+                    alt="product picture"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Hill's Dry Food for Senior Dogs, Age 7+, 5.67 kg
+                    </h5>
+                    <h5 class="text-center">$75.60</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-cart">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <img
+                    src="./../../img/dog-product-2.webp"
+                    class="card-img-top"
+                    alt="product picture"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      SmartHeart Dry Food for Puppies, Beef & Milk Flavor, 8 kg
+                    </h5>
+                    <h5 class="text-center">$23.92</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-cart">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <img
+                    src="./../../img/dog-product-3.webp"
+                    class="card-img-top"
+                    alt="product picture"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Jerhigh Hot Dog Bar for Dogs, Chicken Flavor, 150 g
+                    </h5>
+                    <h5 class="text-center">$4.57</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-cart">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <img
+                    src="./../../img/dog-product-4.webp"
+                    class="card-img-top"
+                    alt="product picture"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Pedigree Dentastix for Small-Breed Dogs, 210 g
+                    </h5>
+                    <h5 class="text-center">$3.97</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-cart">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <img
+                    src="./../../img/dog-product-5.webp"
+                    class="card-img-top"
+                    alt="product picture"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Royal Canin Dry Food for Senior Small-Breed Indoor Dogs 3
+                      kg
+                    </h5>
+                    <h5 class="text-center">$20</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-cart">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <img
+                    src="./../../img/dog-product-6.webp"
+                    class="card-img-top"
+                    alt="product picture"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Royal Canin Dry Food for Adult Miniature Dogs 1.5 kg
+                    </h5>
+                    <h5 class="text-center">$20</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-cart">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <img
+                    src="./../../img/dog-product-1.webp"
+                    class="card-img-top"
+                    alt="product picture"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Hill's Dry Food for Senior Dogs, Age 7+, 5.67 kg
+                    </h5>
+                    <h5 class="text-center">$75.60</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-cart">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <img
+                    src="./../../img/dog-product-2.webp"
+                    class="card-img-top"
+                    alt="product picture"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      SmartHeart Dry Food for Puppies, Beef & Milk Flavor, 8 kg
+                    </h5>
+                    <h5 class="text-center">$23.92</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-cart">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <img
+                    src="./../../img/dog-product-3.webp"
+                    class="card-img-top"
+                    alt="product picture"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Jerhigh Hot Dog Bar for Dogs, Chicken Flavor, 150 g
+                    </h5>
+                    <h5 class="text-center">$4.57</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-cart">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 col-6">
+          <div class="row">
+            <img
+              src="./../../img/logo-pic.png"
+              alt="picture logo doggo"
+              class="logo-home col-6 d-none d-md-block"
+            >
+            <div class="col-md-6 justify-content-center">
+              <img
+                src="./../../img/logo-name-2.png"
+                alt="picture logo name doggo"
+                class="logo-home"
+              >
+              <p>
+                123 Mittraphap Road, Nai-Mueang Sub-district, Mueang District,
+                Khon Kaen 40002, Thailand
+              </p>
+              <p>Tel: +66 43 009700</p>
+              <div>
+                <i class="bi bi-github"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-6">
+          <div class="d-flex justify-content-center">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+            <ul>
+              <li><a href="./../home.html">About dog</a></li>
+              <li><a href="./../adoption.html">Adoption</a></li>
+              <li><a href="./../product.html">Shop</a></li>
+              <li><a href="./../advice.html">Expert</a></li>
+              <li><a href="./../team.html">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-center">&copy; 2025 Doggo. All rights reserved.</p>
+
+      <hr class="line" >
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+.contain-product {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.product-pic {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.product-pic:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.small-product-pic {
+  width: 85%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.small-product-pic:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.item-all-pic {
+  max-width: 70rem;
+  padding: 2rem;
+}
+
+.descrip-item {
+  max-width: 70rem;
+  padding: 2rem;
+}
+
+.item-detail {
+  gap: 5%;
+}
+
+.product-name {
+  align-items: center;
+  width: 50%;
+  margin-left: 10%;
+  margin-bottom: 3rem;
+  font-size: clamp(2rem, 1.66666vw, 3.2rem);
+}
+
+.descrip-item-inside {
+  gap: 2rem;
+  align-items: center;
+}
+
+.price {
+  font-size: clamp(2rem, 1.66666vw, 3.2rem);
+  font-weight: bold;
+}
+
+.ori-price {
+  font-size: clamp(2rem, 1.66666vw, 3.2rem);
+  padding: 5px 20px;
+  background-color: #ffa8a8;
+  color: #e03131;
+}
+
+.save-price {
+  font-size: clamp(1.2rem, 1.1111vw, 2.3rem);
+  background-color: #bee3b3;
+  color: #18841f;
+  padding: 4px;
+}
+
+.paragraph-item {
+  width: 75%;
+  font-size: clamp(1.1rem, 1.299999vw, 2.5rem);
+
+  color: #444444;
+}
+
+.bi-star-fill {
+  font-size: 2rem;
+  color: #ffd700;
+}
+
+.num-reviews {
+  font-size: clamp(1.2rem, 1.1111vw, 2.3rem);
+}
+
+.group-btn {
+  gap: 1.5rem;
+}
+
+.buy-btn:link,
+.buy-btn:visited,
+.cart-btn:link,
+.cart-btn:visited {
+  font-size: clamp(2rem, 1.66666vw, 3.2rem);
+  width: 17rem;
+  height: 6.5rem;
+  border-radius: 15px;
+  padding: 10px;
+  color: #fff;
+}
+
+.buy-btn:link,
+.buy-btn:visited {
+  background-color: #fff;
+  color: #a76545;
+  border: 2px solid #a76545;
+  box-shadow: 0 6px 12px rgba(185, 94, 49, 0.274);
+}
+
+.cart-btn:link,
+.cart-btn:visited {
+  background-color: #a76545;
+}
+
+.buy-btn:hover,
+.cart-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.buy-btn:active,
+.cart-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+}
+
+.review-shipping {
+  width: 80%;
+  gap: 3rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.reviews {
+  width: 70rem;
+  /* width: 60%; */
+  padding: 3rem;
+  overflow: auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.shipping {
+  max-width: 45rem;
+  height: 25rem;
+  background-color: #ffdf88;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.shipping ul {
+  list-style-type: circle;
+  font-size: clamp(1.2rem, 1.1111vw, 2.3rem);
+}
+
+.comment-review {
+  gap: 1.5rem;
+}
+
+h4 {
+  font-size: clamp(1.5rem, 1.399999vw, 2.6rem);
+}
+
+.reviews ul li {
+  margin: 3rem;
+  padding-bottom: 1.5rem;
+}
+.profile-review {
+  width: 4.7rem;
+  height: 4.7rem;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: clamp(1.2rem, 1.1111vw, 2.3rem);
+  margin-bottom: 0;
+}
+
+.comments {
+  font-size: clamp(1.2rem, 1.1111vw, 2.3rem);
+  margin-left: 3rem;
+}
+
+.more-topic {
+  font-size: clamp(2rem, 1.66666vw, 3.2rem);
+  margin-bottom: 2.5rem;
+}
+
+/* .product-row {
+  gap: 3rem;
+  justify-content: center;
+} */
+
+.contain-more {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.more {
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  border-radius: 15px;
+  width: 75%;
+  height: 40rem;
+}
+
+.card img {
+  border-radius: 15px;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.card-title {
+  font-size: clamp(1.2rem, 1.1111vw, 2.3rem);
+}
+
+.card-body h5 {
+  font-size: clamp(1.2rem, 1.1111vw, 2.3rem);
+  margin-bottom: 2rem;
+}
+
+.btn-cart {
+  font-size: clamp(1.5rem, 1.2999vw, 2.5rem);
+  background-color: #a76545;
+  color: #fff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5rem;
+  height: 5rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #444;
+  background-size: 60%;
+}

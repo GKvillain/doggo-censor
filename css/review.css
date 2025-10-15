@@ -1,0 +1,68 @@
+.container {
+  min-height: 100vh;
+}
+
+.content {
+  gap: 10rem;
+}
+
+.topic {
+  font-size: clamp(3.5rem, 3.3vw, 5.2rem);
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
+
+.name-product {
+  font-size: clamp(1.1rem, 1.299999vw, 2.5rem);
+  margin-bottom: 1.5rem;
+}
+
+.product-pic {
+  width: 30rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-review {
+  width: 60rem;
+}
+
+.bi-star-fill {
+  width: 5rem;
+  color: #999;
+}
+
+textarea {
+  width: 100%;
+  height: 40rem;
+  border-radius: 15px;
+  border: 2px solid #e0c9b6;
+  padding: 2rem;
+  background-color: #fffaf4;
+  font-size: clamp(1.1rem, 1.299999vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-post:link,
+.btn-post:visited,
+.btn-post {
+  background-color: #a76545;
+  font-size: clamp(1.1rem, 1.299999vw, 2.5rem);
+  color: #fff;
+  width: 15rem;
+  height: 5rem;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  border: none;
+}
+
+.btn-post:hover {
+  background-color: #8e5239;
+}
+
+input[type="file"] {
+  display: none;
+}
